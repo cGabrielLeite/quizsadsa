@@ -110,6 +110,10 @@ function resetarQuiz() {
 
     document.querySelector('.progress--bar').style.width = '0%';
 
+    if(document.querySelector('body').style.backgroundImage != ''){
+        document.querySelector('body').style.backgroundImage = '';
+    }
+
     mostrarConteudo();
 
     audioAcertouTodas.pause();
